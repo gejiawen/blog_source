@@ -17,7 +17,7 @@ gitflow是构建在Git之上的一个组织软件开发活动的模型，是在G
 
 社区中，有一个比较成功的[gitflow模型](http://nvie.com/posts/a-successful-git-branching-model/)，如下图所示，
 
-![](/res/git-flow-compact-model/001.png)
+![](//images0.gejiawen.com/posts/git-flow-compact-model/001.png)
 
 利用Git创建和管理分支的能力，为每个分支设定具有特定的含义名称，并将软件生命周期中的各类活动归并到不同的分支上。实现了软件开发过程不同操作的相互隔离。
 
@@ -29,7 +29,7 @@ gitflow是构建在Git之上的一个组织软件开发活动的模型，是在G
 
 下面是这张图是最终的讨论后的结果，
 
-![](/res/git-flow-compact-model/002.png)
+![](//images0.gejiawen.com/posts/git-flow-compact-model/002.png)
 
 
 1，有特殊含义的分支只有三种：master、release、feature。master分支为主干，其含义是master分支代码就是线上跑的代码；release分支为发布分支，它会承载功能发布、QA回归等流程；feature分支为功能分支，它承载了具体的功能开发，所有的开发者都将基于feature分支签出自己的个人开发分支。

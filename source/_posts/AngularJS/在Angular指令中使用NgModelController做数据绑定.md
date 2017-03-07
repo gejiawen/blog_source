@@ -41,7 +41,7 @@ angular.module('HelloApp', [])
 
 我们的示例指令可以做这样一件事，可以指定几个常见的时间单位，并且能够输入数据。最终我们将得到对应的秒数。其功能的截图如下，
 
-![](/res/using-ng-model-controller-with-angular-directive/001.png)
+![](//images0.gejiawen.com/posts/using-ng-model-controller-with-angular-directive/001.png)
 
 这里我们特意将`test`变量分别绑定到我们的自定义指令和默认指令中，以观察其效果。
 
@@ -157,7 +157,7 @@ link: function (scope, element, attrs, ngModelCtrl) {
 
 `time-duration`指令与外部控制器以及其内部的运作如下图，
 
-![](/res/using-ng-model-controller-with-angular-directive/002.png)
+![](//images0.gejiawen.com/posts/using-ng-model-controller-with-angular-directive/002.png)
 
 1. 在外部控制器中（即这里的`HelloApp`的controller），我们通过`ng-model="test"`将test变量传入指令`time-duration`中，并建立绑定关系。
 2. 在指令内部，`$modelValue`其实就是`test`值的一份拷贝。

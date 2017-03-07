@@ -19,13 +19,13 @@ tags: [CSS拾遗系列, css科普]
 
  下图是`word-wrap`属性的详细内容，
 
- ![](http://7xkwt1.com1.z0.glb.clouddn.com/CSS控制本文换行：word-wrap与word-break-001.png)
+![](//images0.gejiawen.com/posts/usage-for-word-wrap-and-word-break/001.png)
 
 其实有点CSS基础的人看到这段定义，应该就能明白这个CSS属性是干什么用的了。不过为了更加明白的阐述，我们下面来看个例子。
 
 下面的页面是没有设置任何CSS换行控制的表现，
 
- ![](http://7xkwt1.com1.z0.glb.clouddn.com/CSS控制本文换行：word-wrap与word-break-002.png)
+![](//images0.gejiawen.com/posts/usage-for-word-wrap-and-word-break/002.png)
 
 从图中可以看出来，句子最后个这个单词`see...e`实在是太长了，导致第一行已经放不下了。虽然浏览器默认将这个超长的单词放在第二行了，但是无奈这个容器仍然还是不够宽，最终导致的结果就是这个单词超出了容器，即所谓的溢出。
 
@@ -41,7 +41,7 @@ tags: [CSS拾遗系列, css科普]
 
 效果如下图，
 
- ![](http://7xkwt1.com1.z0.glb.clouddn.com/CSS控制本文换行：word-wrap与word-break-003.png)
+ ![](//images0.gejiawen.com/posts/usage-for-word-wrap-and-word-break/003.png)
 
 现在ok了，这个超长的单词`see...e`已经被强制换行了，虽然有点影响阅读。
 
@@ -57,7 +57,7 @@ tags: [CSS拾遗系列, css科普]
 
 下图是`word-break`属性的详细内容，
 
- ![](http://7xkwt1.com1.z0.glb.clouddn.com/CSS控制本文换行：word-wrap与word-break-004.png)
+ ![](//images0.gejiawen.com/posts/usage-for-word-wrap-and-word-break/004.png)
 
 这里我们使用如下语法，
 
@@ -69,7 +69,7 @@ tags: [CSS拾遗系列, css科普]
 
 我们再来看看效果，
 
- ![](http://7xkwt1.com1.z0.glb.clouddn.com/CSS控制本文换行：word-wrap与word-break-005.png)
+![](//images0.gejiawen.com/posts/usage-for-word-wrap-and-word-break/005.png)
 
 看到没有，原来第一行空出来的那么点空间，现在也被填充了字符。
 

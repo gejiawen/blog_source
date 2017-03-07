@@ -36,7 +36,7 @@ Object.observe(model, function(changes){
 
 当被观察的对象发生任何变化时，回调函数将会汇报这些变化：
 
-![](http://7xkwt1.com1.z0.glb.clouddn.com/Object-observe-带来的数据绑定变革-001.png)
+![](//images0.gejiawen.com/posts/intro-for-observe-and-data-binding/001.png)
 
 通过使用`Object.observe()`，你可以[不需要使用任何框架](http://bitworking.org/news/2014/05/zero_framework_manifesto)就能实现双向数据绑定。
 
@@ -114,11 +114,11 @@ demo的地址在[这里](http://angular.github.io/angular-phonecat/step-2/app/)�
 
 在任何时候，只要是底层的model数据发生了变化，我们在DOM中的列表也会跟着更新。Angular是怎么做到这一点的呢？在Angular的背后，有一个叫做**脏值检查**的东西。
 
-![](http://7xkwt1.com1.z0.glb.clouddn.com/Object-observe-带来的数据绑定变革-002.png)
+![](//images0.gejiawen.com/posts/intro-for-observe-and-data-binding/002.png)
 
 脏值检查的基本原理就是只要任何时候数据发生了变化，这个库都会通过一个**`digest`**或者**`change cycle`**去检查变化是否发生了。在Angular中，一个`digest`循环意味着所有被监视的表达式都会被循环一遍以便查看其中是否有变化发生。它[知道](http://stackoverflow.com/questions/9682092/databinding-in-angularjs/9693933#9693933)一个模型之前的值，因此当变化发生时一个change事件将会被触发。对于开发者来说，这带来的一大好处就是你可以使用原生的JavaScript对象数据，它易于使用及整合。下面的图片展示的是一个非常糟糕的算法，它的开销非常大。
 
-![](http://7xkwt1.com1.z0.glb.clouddn.com/Object-observe-带来的数据绑定变革-003.png)
+![](//images0.gejiawen.com/posts/intro-for-observe-and-data-binding/003.png)
 
 这个操作的开销和被监视的对象的数量是成正比的。我们可能需要做很多的脏治检查。同时我也需要一种方式去触发脏值检查，当某些数据可能发生改变时。有很多的框架使用了一些非常聪明的方法来解决这个问题，但是它们是否足够好目前还尚无定论。
 
@@ -160,7 +160,7 @@ MyApp.country.get("presidentName");
 
 它允许我们对一个对象或者变异属性进行观察，并且在变化发生时得到及时通知。但是我们在这里不想看什么理论，让我们来看看代码！
 
-![](http://7xkwt1.com1.z0.glb.clouddn.com/Object-observe-带来的数据绑定变革-004.png)
+![](//images0.gejiawen.com/posts/intro-for-observe-and-data-binding/004.png)
 
 
 ## Object.observe()和Object.unobserve()
@@ -204,7 +204,7 @@ todoModel.label = 'Buy some more milk';
 
 看看控制台，我们现在得到了一些有用的信息！我们知道什么属性发生了变化，它是怎样变化的以及新的值是什么。
 
-![](http://7xkwt1.com1.z0.glb.clouddn.com/Object-observe-带来的数据绑定变革-005.png)
+![](//images0.gejiawen.com/posts/intro-for-observe-and-data-binding/005.png)
 
 再见，脏值检查！你的墓碑应该被刻上Comic Sans字体。我们再来改变其他的属性。这次改变的是`completeBy`:
 
@@ -214,7 +214,7 @@ todoModel.completeBy = '01/01/2014';
 
 正如我们所见的，我们又再一次得到了关于变化的报告：
 
-![](http://7xkwt1.com1.z0.glb.clouddn.com/Object-observe-带来的数据绑定变革-006.png)
+![](//images0.gejiawen.com/posts/intro-for-observe-and-data-binding/006.png)
 
 非常好。要是我们现在决定从对象中删除`completed`属性会怎么样：
 
@@ -222,7 +222,7 @@ todoModel.completeBy = '01/01/2014';
 delete todoModel.completed;
 ```
 
-![](http://7xkwt1.com1.z0.glb.clouddn.com/Object-observe-带来的数据绑定变革-007.png)
+![](//images0.gejiawen.com/posts/intro-for-observe-and-data-binding/007.png)
 
 正如我们所见的，返回的变化报告包含了关于删除的信息。正如我们所期待的，新的值现在是`undefined`。那么，我们现在知道了你可以知道属性什么时候被添加。什么时候被删除。基本上来说，你可以知道一个对象上的属性集（'new','deleted','recongigured'）以及它的原型(proto)的变化。
 
@@ -234,7 +234,7 @@ Object.unobserve(todoModel, observer);
 
 正如下面所示，在使用该方法之后，任何的变化都不再作为一个变化列表记录返回。
 
-![](http://7xkwt1.com1.z0.glb.clouddn.com/Object-observe-带来的数据绑定变革-008.png)
+![](//images0.gejiawen.com/posts/intro-for-observe-and-data-binding/008.png)
 
 ## 指定感兴趣的变化
 
@@ -293,7 +293,7 @@ delete todoModel.label;
 
 使用一个通知器的工作流程如下所示:
 
-![](http://7xkwt1.com1.z0.glb.clouddn.com/Object-observe-带来的数据绑定变革-009.png)
+![](//images0.gejiawen.com/posts/intro-for-observe-and-data-binding/009.png)
 
 现在我们通过一个例子来如何通过自定义一个通知器来处理一个对象的属性被设置或者被获取的情况。注意看代码中的注释：
 
@@ -349,7 +349,7 @@ function observer(changes) {
 Object.observe(model.a, observer);
 ```
 
-![](http://7xkwt1.com1.z0.glb.clouddn.com/Object-observe-带来的数据绑定变革-010.png)
+![](//images0.gejiawen.com/posts/intro-for-observe-and-data-binding/010.png)
 
 现在当数据属性发生变化时('update')我们将会得到报告。以及任何对象的实现也将会被报告(`notifier.notifyChange()`)。
 
@@ -363,7 +363,7 @@ Object.observe(model.a, observer);
 
 基本上来说，如果你想要存取器或者计算属性的话，你应该复杂在这些值发生改变时发出通知。这会导致一些额外的工作，但是它是这种机制第一类的特征，并且这些通知会连同来自余下的底层数据对象的通知一起被发布出来。
 
-![](http://7xkwt1.com1.z0.glb.clouddn.com/Object-observe-带来的数据绑定变革-011.png)
+![](//images0.gejiawen.com/posts/intro-for-observe-and-data-binding/011.png)
 
 观察存取器或者计算属性的问题可以通过使用`notifier.notify`来解决 -- 它也是`Object.observe()`的另外一部分。大多数的观察系统想要某些形式的观察导出值。有很多方法可以实现它。`Object.observe()`并没有用*正确的*方式进行判断。计算属性应该是存取器，当内部的（私有的）状态发生改变时它应该发出通知。
 
@@ -422,7 +422,7 @@ function observer(changes){
 }
 ```
 
-![](http://7xkwt1.com1.z0.glb.clouddn.com/Object-observe-带来的数据绑定变革-012.png)
+![](//images0.gejiawen.com/posts/intro-for-observe-and-data-binding/012.png)
 
 
 # 存取器属性
@@ -437,7 +437,7 @@ function observer(changes){
 
 `Object.observe()`上的另一个模式是使用单个回调观察者。这允许我们使用同一个回调函数堆多个不同的对象进行观察。这个回调函数在“微任务”的结尾将会把所有的变化都传递给它所观察的对象。
 
-![](http://7xkwt1.com1.z0.glb.clouddn.com/Object-observe-带来的数据绑定变革-013.png)
+![](//images0.gejiawen.com/posts/intro-for-observe-and-data-binding/013.png)
 
 # 大规模的变化
 
@@ -445,7 +445,7 @@ function observer(changes){
 
 `Object.observe()`使用两个特定的函数来解决这个问题：`notifier.performChange()`以及`notifier.notify()`，我们在上面已经介绍过这两个函数了。
 
-![](http://7xkwt1.com1.z0.glb.clouddn.com/Object-observe-带来的数据绑定变革-014.png)
+![](//images0.gejiawen.com/posts/intro-for-observe-and-data-binding/014.png)
 
 我们可以从下面的例子中看到我们如何来描述大规模变化，在这个例子中定义了一个叫做`Thingy`的对象，其中包含几个数计算功能（multiply, increment, incrementAndMultiply）。只要其中一个功能被使用，它就会告诉系统一些包含特定变化的事情发生了。
 
@@ -572,7 +572,7 @@ thingy.a++;                        // { a: 11, b: 16 }
 thingy.incrementAndMultiply(2, 2); // { a: 26, b: 36 }
 ```
 
-![](http://7xkwt1.com1.z0.glb.clouddn.com/Object-observe-带来的数据绑定变革-015.png)
+![](//images0.gejiawen.com/posts/intro-for-observe-and-data-binding/015.png)
 
 位于这个`perform function`中的一切东西都可以被看作是*大型变化*进行的工作。接受*大型变化*的观察者仅仅只会接受*大型变化”*记录。那些不会接受底层变化的观察者都来源于`perform function`所做的事。
 
@@ -597,7 +597,7 @@ model[0] = 'Teach Paul Lewis to code';
 model[1] = 'Channel your inner Paul Irish';
 ```
 
-![](http://7xkwt1.com1.z0.glb.clouddn.com/Object-observe-带来的数据绑定变革-016.png)
+![](//images0.gejiawen.com/posts/intro-for-observe-and-data-binding/016.png)
 
 
 # 性能
@@ -622,11 +622,11 @@ model[1] = 'Channel your inner Paul Irish';
 
 **Dirty-checking**
 
-![](http://7xkwt1.com1.z0.glb.clouddn.com/Object-observe-带来的数据绑定变革-017.png)
+![](//images0.gejiawen.com/posts/intro-for-observe-and-data-binding/017.png)
 
 **Chrome with Object.observe() switched on**
 
-![](http://7xkwt1.com1.z0.glb.clouddn.com/Object-observe-带来的数据绑定变革-018.png)
+![](//images0.gejiawen.com/posts/intro-for-observe-and-data-binding/018.png)
 
 
 # 为Object.observe()提供垫片

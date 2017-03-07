@@ -54,11 +54,11 @@ tags: [CSS拾遗系列, css技巧]
 
 效果如下，
 
-![](http://7xkwt1.com1.z0.glb.clouddn.com/CSS常用布局之宽高自适应-001.png)
+![](//images0.gejiawen.com/posts/css-layout-width-height-responsive/001.png)
 
 上述代码在现代浏览器中是完全没有问题的，不过在IE6中有些问题，如下，
 
-![](http://7xkwt1.com1.z0.glb.clouddn.com/CSS常用布局之宽高自适应-002.png)
+![](//images0.gejiawen.com/posts/css-layout-width-height-responsive/002.png)
 
 这个是只有IE6下才会有的问题，有个3px的bug，我们需要对各列的css代码进行一些兼容，
 
@@ -125,11 +125,11 @@ tags: [CSS拾遗系列, css技巧]
 
 效果如下，
 
-![](http://7xkwt1.com1.z0.glb.clouddn.com/CSS常用布局之宽高自适应-003.png)
+![](//images0.gejiawen.com/posts/css-layout-width-height-responsive/003.png)
 
 但是上述方案在IE6下是问题的（IE6真是翔一样的浏览器啊!!），如下图
 
-![](http://7xkwt1.com1.z0.glb.clouddn.com/CSS常用布局之宽高自适应-004.png)
+![](//images0.gejiawen.com/posts/css-layout-width-height-responsive/004.png)
 
 **main**块咋变成这样了啊？这是因为上述在现代浏览器中高度自适应的原理在IE6中并不适用。在IE6中，即使你将一个元素的定位属性设置成`absolute`了，此时改变其位置属性并不能改变元素的大小。
 

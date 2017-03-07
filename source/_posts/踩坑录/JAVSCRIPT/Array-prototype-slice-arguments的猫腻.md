@@ -21,7 +21,7 @@ function foo() {
 
 在javascript中，函数中的`arguments`是一个特殊的内置变量，它其实是一个对象，但是其内部的表现却跟数组一致。如下图，
 
-![](/res/perf-about-array-prototype-slice-arguments/001.png)
+![](//images0.gejiawen.com/posts/perf-about-array-prototype-slice-arguments/001.png)
 
 其中`arguments.callee`和`arguments.Symbol`属性都是不可枚举的（无法用`for...in`遍历）。
 

@@ -9,7 +9,7 @@ tags: [CSS拾遗系列, css技巧]
 
 场景的示意如下图，
 
-![](http://7xkwt1.com1.z0.glb.clouddn.com/CSS如何让页脚固定在页面底部-001.png)
+![](//images0.gejiawen.com/posts/how-to-fix-footer-to-bottom/001.png)
 
 那么如何将页脚始终固定在页面底部呢？
 

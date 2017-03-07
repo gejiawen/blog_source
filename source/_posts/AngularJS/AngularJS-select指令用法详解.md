@@ -54,7 +54,7 @@ function selectCtrl($scope) {
 ```
 
 **效果**
-![基本下拉效果](http://7xkwt1.com1.z0.glb.clouddn.com/AngularJS-select指令用法详解-001.png)
+![](//images0.gejiawen.com/posts/usage-for-angularjs-ng-select/001.png)
 
 **说明**
 1. **usage** 中的`value`也就是`ng-options`中的`m`，而`m`是数组`model`的一个元素，*它是一个变量*
@@ -73,7 +73,7 @@ function selectCtrl($scope) {
 ```
 
 **效果**
-![自定义下拉显示名称](http://7xkwt1.com1.z0.glb.clouddn.com/AngularJS-select指令用法详解-002.png)
+![](//images0.gejiawen.com/posts/usage-for-angularjs-ng-select/002.png)
 
 **说明**
 1. 可以看到，**usage** 中的`label`可以根据需求拼接出不同的字符串
@@ -91,7 +91,7 @@ function selectCtrl($scope) {
 ```
 
 **效果**
-![让选项分组](http://7xkwt1.com1.z0.glb.clouddn.com/AngularJS-select指令用法详解-003.png)
+![](//images0.gejiawen.com/posts/usage-for-angularjs-ng-select/003.png)
 
 **说明**
 1. 这里使用了`group by`，通过`$scope.model`中的`mainCategory`字段进行分组
@@ -109,7 +109,7 @@ function selectCtrl($scope) {
 ```
 
 **效果**
-![自定义ngModel的绑定](http://7xkwt1.com1.z0.glb.clouddn.com/AngularJS-select指令用法详解-004.png)
+![](//images0.gejiawen.com/posts/usage-for-angularjs-ng-select/004.png)
 
 **说明**
 1. 这种用法也是`select`指令中较为复杂的一种。从效果中可以看出，**usage** 中`select`的作用就是重新绑定`ng-model`的值。在这里，`ng-model`等于`m.id`，当`ng-model`发生改变的时候，得到的实际值是`m.id`的值。

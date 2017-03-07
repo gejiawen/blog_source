@@ -79,7 +79,7 @@ console.log(dog.__proto === Animal.prototype); // true;
 
 下面是一张关于上述代码中`Animal`（构造器）及两个实例（`cat`及`dog`）的原型关系图，
 
-![](http://7xkwt1.com1.z0.glb.clouddn.com/区分JS中的__proto__和prototype-001.png)
+![](//images0.gejiawen.com/posts/different-from-proto-and-prototype/001.png)
 
 从图中我们可以看出，
 
@@ -117,7 +117,7 @@ console.log(p.sayName()); // My name is gejiawen
 
 下面是实例对象`p`在Chrome console中的打印，
 
-![](http://7xkwt1.com1.z0.glb.clouddn.com/区分JS中的__proto__和prototype-002.png)
+![](//images0.gejiawen.com/posts/different-from-proto-and-prototype/002.png)
 
 所以，各个打印的解释如下，
 
@@ -168,7 +168,7 @@ console.log(rabbit.eats); // true
 
 此时，`rabbit.__proto__`上将会有`eats`属性，如关系如下图，
 
-![](http://7xkwt1.com1.z0.glb.clouddn.com/区分JS中的__proto__和prototype-003.png)
+![](//images0.gejiawen.com/posts/different-from-proto-and-prototype/003.png)
 
 请注意各个对象的`__proto__`之间的关系。
 

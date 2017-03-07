@@ -9,7 +9,7 @@ tags: [linux]
 
 本书以一种轻松幽默的风格阐述了Linus的生平，包括其成长、Linux的诞生、和一些关于对开源及生命等问题的观点。个人认为Linus大神之所以备受业界推崇，不仅仅是他个人在源代码开发上的成就，更多的是他的综合魅力。
 
-[![](http://7xkwt1.com1.z0.glb.clouddn.com/只是为了好玩-Linux之父林纳斯自传-001.jpg)](http://www.amazon.cn/dp/B00MB51SAI/ref=pd_rhf_dp_s_cp_3_W8VW?_encoding=UTF8&refRID=1RYMH7VHBKXHSCWPN4DZ)
+[![](//images0.gejiawen.com/posts/read-just-for-fun/001.png)](http://www.amazon.cn/dp/B00MB51SAI/ref=pd_rhf_dp_s_cp_3_W8VW?_encoding=UTF8&refRID=1RYMH7VHBKXHSCWPN4DZ)
 
 1969年末，Linus出生于芬兰的赫尔辛基市。Linus小时候其貌不扬，除了有一个大鼻子之外，而且不修边幅。在学习上能够不费劲就学好数学和物理，但是却不擅与人交流。Linus在他外公那边接触到了电脑，且在其外公的影响下逐渐走上了程序员（或者说黑客）这条路。
 

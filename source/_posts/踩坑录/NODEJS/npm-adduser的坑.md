@@ -16,7 +16,7 @@ tags: [nodejs, npm]
 
 而且报错的信息还很诡异，如下
 
-![](http://7xkwt1.com1.z0.glb.clouddn.com/npm-adduser的坑-001.png)
+![](//images0.gejiawen.com/posts/npm-adduser-refuse/001.png)
 
 提示我说用户名或者密码错误？！！我就惊了个呆了，我都已经登陆上[npmjs.org](http://www.npmjs.org)了，怎么还说我用户名或者密码错误呢？
 

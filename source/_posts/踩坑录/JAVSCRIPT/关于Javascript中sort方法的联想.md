@@ -27,7 +27,7 @@ var sorted = arr.sort();
 
 言归正传，在上面的示例中，我们来输出`arr`和`sorted`这两个变量看一下他们的结果，如下图
 
-![](/res/think-about-javascript-sort/001.png)
+![](//images0.gejiawen.com/posts/think-about-javascript-sort/001.png)
 
 图中有两个要点，
 

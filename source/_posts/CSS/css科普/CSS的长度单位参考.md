@@ -74,8 +74,8 @@ CSS相对长度单位中的相对二字，表明了其长度单位会随着它�
 
 inspect结果如下，
 
-![](http://7xkwt1.com1.z0.glb.clouddn.com/CSS的长度单位参考-001.png)
-![](http://7xkwt1.com1.z0.glb.clouddn.com/CSS的长度单位参考-002.png)
+![](//images0.gejiawen.com/posts/css-length-unit-guide/001.png)
+![](//images0.gejiawen.com/posts/css-length-unit-guide/002.png)
 
 可见div3和div2的font-size并不一致。其原因就是因为em长度单位有级联效果。上述代码的计算规则如下，
 

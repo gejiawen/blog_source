@@ -21,7 +21,7 @@ date: 2016-11-10 23:14:50
 
 如果在一个比较高的抽象层面来看这个问题，Web开发就是处理**客户端请求及服务端响应**这两件事。
 
-![](/res/discovery-and-thought-on-web-development/001.png)
+![](//images0.gejiawen.com/posts/discovery-and-thought-on-web-development/001.png)
 
 上图就是一个非常高的级别的抽象。实际的开发中，还会有许多方面是需要考虑的。
 
@@ -29,7 +29,7 @@ date: 2016-11-10 23:14:50
 
 大概2008年左右，一个web应用或者web开发的标准模型如下图，
 
-![](/res/discovery-and-thought-on-web-development/002.png)
+![](//images0.gejiawen.com/posts/discovery-and-thought-on-web-development/002.png)
 
 此时，后端主要做的事情是从数据库中拉取数据，在server端生成html模板，然后将生成的模板发送到客户端。客户端收到模板后，在客户端注入js和css，生成dom树，然后渲染成页面呈现给用户。
 
@@ -47,7 +47,7 @@ date: 2016-11-10 23:14:50
 
 前后端分离的开发模式大概如下图所示，
 
-![](/res/discovery-and-thought-on-web-development/003.png)
+![](//images0.gejiawen.com/posts/discovery-and-thought-on-web-development/003.png)
 
 前后端分离开发模式下，server端从数据库拿到元数据，经过处理后直接吐出数据，而不是模板。client端拿数据之后，在客户端端进行模板渲染生成页面呈现给用户。
 
@@ -72,14 +72,14 @@ date: 2016-11-10 23:14:50
 
 下面有一张我自己画的图，我觉得应该可以表达出我想法中的所谓中间层模式，
 
-![](/res/discovery-and-thought-on-web-development/004.png)
+![](//images0.gejiawen.com/posts/discovery-and-thought-on-web-development/004.png)
 
 1. 首先，这里可能没有明确意义上的后端，取而代之是REST Server、Micro Service等内容。他们的本质依然是对上层提供数据。这些内容都属于backend的范畴。
 2. backend的上层就是frontend。这里所谓的frontend其实是一种宽泛的指代，它表示了一个响应用户请求、交互等操作的集合。在这个集合中，最上层是用户，然后是客户端（浏览器）层，然后客户端的的下面是NodeJS层。此外还会有一个nginx层。
 3. 第一种场景，当用户发起一个页面请求时，浏览端会首先接受这个请求，然后丢给nginx来代理，nginx根据请求的类型将请求转发给对应的NodeJS层服务。NodeJS层内部会解析来自nginx层转发的请求，执行对应的业务类，组装数据，最终输出一个html模板给客户端（浏览器），浏览器端拿到模板之后，注入客户端的js和css代码之后再渲染到成页面，呈现给用户。
 4. 第二种场景，用户在页面发起交互请求时，比如点击按钮发起请求，此时这个请求最终会丢给NodeJS层，NodeJS层收到请求之后进行处理，然后将响应返回给浏览器。
-5. 基本上，绝大部分来自客户端（UI层）的请求和交互都会在NodeJS层进行处理，UI层与底层的REST服务或者微服务是隔离的。当然也有特例，比如图片验证码这种场景，将会由浏览器直接请求底层REST服务或者微服务。比如，![](/res/discovery-and-thought-on-web-development/005.png)
-6. 很多时候，用户通过url请求一个页面时，NodeJS层收到这个请求后，会同时发出多个REST请求，或者向多个微服务发出请求，待所有的REST请求都返回后，在NodeJS层进行数据组装，处理，清洗等操作，这其中可能会掺杂一些特定的业务需求。我们一般称这一过程为REST Combo。比如，![](/res/discovery-and-thought-on-web-development/006.png)
+5. 基本上，绝大部分来自客户端（UI层）的请求和交互都会在NodeJS层进行处理，UI层与底层的REST服务或者微服务是隔离的。当然也有特例，比如图片验证码这种场景，将会由浏览器直接请求底层REST服务或者微服务。比如，![](//images0.gejiawen.com/posts/discovery-and-thought-on-web-development/005.png)
+6. 很多时候，用户通过url请求一个页面时，NodeJS层收到这个请求后，会同时发出多个REST请求，或者向多个微服务发出请求，待所有的REST请求都返回后，在NodeJS层进行数据组装，处理，清洗等操作，这其中可能会掺杂一些特定的业务需求。我们一般称这一过程为REST Combo。比如，![](//images0.gejiawen.com/posts/discovery-and-thought-on-web-development/006.png)
 
 通过上面的描述，这种模式下前端开发们将会处理三方面的事，
 
@@ -89,7 +89,7 @@ date: 2016-11-10 23:14:50
 
 更进一步，我们在实际项目中，可以将UI层和NodeJS层不必划分太明确的界限，如下的目录结构，
 
-![](/res/discovery-and-thought-on-web-development/007.png)
+![](//images0.gejiawen.com/posts/discovery-and-thought-on-web-development/007.png)
 
 其中`app`目录是NodeJS层代码，`public`目录是UI层代码，`dist`是项目构建之后的目录。在项目部署时，只会针对`dist`目录。
 
@@ -159,7 +159,7 @@ SwordError是SwordPlus的Error封装。用于统一分配error。
 
 sword-plus的执行流程简图大致如下，
 
-![](/res/discovery-and-thought-on-web-development/008.png)
+![](//images0.gejiawen.com/posts/discovery-and-thought-on-web-development/008.png)
 
 具体的使用可以参考sword-plus中的[demo](https://github.com/gejiawen/sword-plus/tree/master/demo)文件夹。
 
@@ -167,7 +167,7 @@ sword-plus的执行流程简图大致如下，
 
 这里稍微提一下所谓的完全分离模式，即此模式下的前端开发和传统意义上的后端开发完全隔离开，不会涉及到中间层的开发。如下图，
 
-![](/res/discovery-and-thought-on-web-development/009.png)
+![](//images0.gejiawen.com/posts/discovery-and-thought-on-web-development/009.png)
 
 此时，前端和后端通过ajax请求来交互，后端返回给前端数据。客户端的所有事情，包括页面渲染、交互、样式、路由等等都是由前端自己来管理。此时前端开发往往会引入一个较为成熟的前端开源框架作为底层选型。这种开发模式有其独特的适用场景，比如单页应用（Single Page Application）、企业内部的某个管理系统等等。如果前端开发对底层选型的框架较为熟悉，往往开发速度非常快，基本上在实际开发中遇到的一些问题都可以在框架社区中找到解决方案。
 

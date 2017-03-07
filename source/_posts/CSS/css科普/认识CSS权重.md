@@ -42,11 +42,11 @@ tags: [CSS拾遗系列, css, css科普]
 
 如下图，
 
-![](http://7xkwt1.com1.z0.glb.clouddn.com/认识CSS权重-001.png)
+![](//images0.gejiawen.com/posts/css-weight-guide/001.png)
 
 总结起来就是这样的，
 
-![](http://7xkwt1.com1.z0.glb.clouddn.com/认识CSS权重-002.png)
+![](//images0.gejiawen.com/posts/css-weight-guide/002.png)
 
 举个例子，比如下面的代码，
 
