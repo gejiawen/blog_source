@@ -16,7 +16,7 @@ We need rules.
 
 试想一下，如果你处在下图的工作场景中，
 
-![](/res/slides/how-to-build-ui-widget-and-static-domain/008.png)
+![](//images0.gejiawen.com/slides/how-to-build-ui-widget-and-static-domain/008.png)
 
 这里的Nyx即是我们的UI规范。
 
@@ -49,7 +49,7 @@ Perfect!
 
 这里有一张图，
 
-![](/res/slides/how-to-build-ui-widget-and-static-domain/007.png)
+![](//images0.gejiawen.com/slides/how-to-build-ui-widget-and-static-domain/007.png)
 
 简单概括来说，我们会一个称之为**静态域**的东西，为所有的其他的业务域提供通用的UI和交互服务支持，包括但不限于静态文件分发、UI及组件化支持、通用页面版本支持等等。
 
@@ -72,7 +72,7 @@ Perfect!
 
 关于UI分类，参考了很多前辈的成果，如下图
 
-![](/res/slides/how-to-build-ui-widget-and-static-domain/002.png)
+![](//images0.gejiawen.com/slides/how-to-build-ui-widget-and-static-domain/002.png)
 
 个人觉得按照这种feature的概念和维护队UI做分类可能更具延展性和拓展性。
 
@@ -131,7 +131,7 @@ Perfect!
 
 我们需要一个世界观去架构模板、式样和交互，让他们有机的组合在一起。我来看看react是如何做组件化的。
 
-![](/res/slides/how-to-build-ui-widget-and-static-domain/009.png)
+![](//images0.gejiawen.com/slides/how-to-build-ui-widget-and-static-domain/009.png)
 
 从图中我们可以看出，
 
@@ -151,7 +151,7 @@ Perfect!
 
 所谓静态域，其实就是在UI库和组件化这两者较为完备之后，我们为了让UI和组件的服务输出更加智能和高效，从而搭建的一种上层应用。他的具体作用，我觉得这张图完全可以意传了。
 
-![](/res/slides/how-to-build-ui-widget-and-static-domain/007.png)
+![](//images0.gejiawen.com/slides/how-to-build-ui-widget-and-static-domain/007.png)
 
 除了静态资源分发，UI和组件支持这一点之外，业务域中通用的板块也可以使用静态域来做分发。举个例子，有一个管理中心的用户后台，这个管理中心是好几个业务线控制台的聚合体。它会有一个左侧导航菜单，每一个菜单对应各自业务的页面。我们在是实现上，可能会在每一个独立的业务域中都做一套这个左侧菜单，一旦某个菜单项发生更新，将会影响到所有包含这个左侧菜单的业务域。这无疑是一个很烂的方案。
 
