@@ -9,19 +9,14 @@ date: 2014-10-21
 
 ```javascript
 const gejiawen = {
-    "Chinese Name": "葛加文",
-    "English Name": "Larry",
+    "Name": "Larry",
     "Sex": "male",
-    "Age": "1989",
-    "Career": "Web Front End Engineer",
-    "Email": ["806717031@qq.com", "mamamiya.gee@gmail.com"],
-    "Phone": ["49", "53", "57", "53", "53", "51", "50", "55", "52", "56", "52"],
+    "Career": "Web Full Stack Engineer",
+    "Email": "806717031@qq.com",
     "Github": "https://github.com/gejiawen",
     "Blog": "http://blog.gejiawen.com",
-    "Enjoy": "Dota2"
+    "Enjoy": "DOTA2, Steam"
 };
-
-console.log(String.fromCharCode(...gejiawen.Phone));
 ```
  
 ------
@@ -52,6 +47,7 @@ More links,
 ## Friendly links
 
 - [黑 * 白](http://youngsterxyf.github.io/)
+- [Hope's Blog](https://blog.ygxdxx.com/)
 - [众成技术聚乐部](http://happytechgroup.github.io/)
 - [偷着乐读书会](http://happyreading.github.io/)
 - [博客歪歪](http://www.bokeyy.com/)
