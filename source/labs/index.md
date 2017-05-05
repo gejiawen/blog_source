@@ -23,12 +23,12 @@ date: 2014-12-01
 
 ## Slides
 
-- [这些年前端的那些事儿](/slides/things-for-fe-in-these-years)
-- [我的开发流模型](/slides/my-dev-workflows)
-- [Javascript Async Ninja](/slides/javascript-async-ninja)
-- [版本控制艺术——Git的原理与实践](/slides/git-theory-and-practise)
-- [Log Server for NodeJS App](/slides/log-server-for-nodejs-app)
-- [UI组件库和静态服务域的相关实践](/slides/how-to-build-ui-widget-and-static-domain)
+- [这些年前端的那些事儿](/slides/things-for-fe-in-these-years/)
+- [我的开发流模型](/slides/my-dev-workflows/)
+- [Javascript Async Ninja](/slides/javascript-async-ninja/)
+- [版本控制艺术——Git的原理与实践](/slides/git-theory-and-practise/)
+- [Log Server for NodeJS App](/slides/log-server-for-nodejs-app/)
+- [UI组件库和静态服务域的相关实践](/slides/how-to-build-ui-widget-and-static-domain/)
 
 
 ## Services
