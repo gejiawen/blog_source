@@ -40,7 +40,7 @@ More links,
 
 | 域名 | 上线时间 | 说明 | 备注 |
 | :--- | :--- | :--- | :--- |
-| gejiawen.com、www.gejiawen.com | 2016.5 | 个人主页 | 临时简陋页面，提供各子域导航 |
+| [gejiawen.com](http://gejiawen.com)、[www.gejiawen.com](http://www.gejiawen.com) | 2016.5 | 个人主页 | 临时简陋页面，提供各子域导航 |
 | [blog.gejiawen.com](http://blog.gejiawen.com) | 2014.6 | 个人博客 | 静态博客 |
 | [gogs.gejiawen.com](http://gogs.gejiawen.com) | 2016.6 | git服务 | 基于gogs的自助式git托管服务 |
 | [book.gejiawen.com](http://book.gejiawen.com) | 2016.4 | 个人书架 | 临时简陋页面，提供书籍列表 |
