@@ -36,10 +36,15 @@ More links,
 
 本博客[blog.gejiawen.com](http://blog.gejiawen.com)为其子域名。之前的gejiawen.github.io/gejiawen.gitcafe.io不再使用及支持。
 
-除了[blog.gejiawen.com](http://blog.gejiawen.com)之外，暂时还有如下两个子域名，
+本站提供的所有子域名服务如下：
 
-- [gogs.gejiawen.com](http://gogs.gejiawen.com)  自助Git服务，用于托管一些不便在github上托管的东西。
-- [book.gejiawen.com](http://book.gejiawen.com)  开源书籍或者文档列表。
+| 域名 | 上线时间 | 说明 | 备注 |
+| :--- | :--- | :--- | :--- |
+| gejiawen.com、www.gejiawen.com | 2016.5 | 个人主页 | 临时简陋页面，提供各子域导航 |
+| [blog.gejiawen.com](http://blog.gejiawen.com) | 2014.6 | 个人博客 | 静态博客 |
+| [gogs.gejiawen.com](http://gogs.gejiawen.com) | 2016.6 | git服务 | 基于gogs的自助式git托管服务 |
+| [book.gejiawen.com](http://book.gejiawen.com) | 2016.4 | 个人书架 | 临时简陋页面，提供书籍列表 |
+| [crack.gejiawen.com](http://crack.gejiawen.com) | 2016.10 | 安全破解 | 😆😆 |
 
 后续将会开通更多的服务子域名，敬请期待。
 
