@@ -29,6 +29,7 @@ date: 2014-12-01
 - [版本控制艺术——Git的原理与实践](/slides/git-theory-and-practise/)
 - [Log Server for NodeJS App](/slides/log-server-for-nodejs-app/)
 - [UI组件库和静态服务域的相关实践](/slides/how-to-build-ui-widget-and-static-domain/)
+- [Docker从入门到实践](/slides/docker-practice/)
 
 
 ## Services
