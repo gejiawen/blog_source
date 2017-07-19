@@ -81,4 +81,4 @@ deploy:
   type: git
   repo:
     github: https://github.com/gejiawen/blog.gejiawen.com.git,master
-   # gogs: http://gogs.gejiawen.com/gejiawen/blog.gejiawen.com.git,master
+    gogs: http://gogs.gejiawen.com/gejiawen/blog.gejiawen.com.git,master
