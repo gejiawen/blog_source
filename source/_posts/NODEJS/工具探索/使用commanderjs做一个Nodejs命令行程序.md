@@ -18,10 +18,10 @@ Nodejs的另一个常用场景是，造出一些实用工具，而这些工具�
 
 我们先随便写一个node程序，把`process.argv`打印出来看看，
 
-```javascript
+```bash
 $ node test1.js --name gk
-[ 
-    '/usr/local/Cellar/node/6.6.0/bin/node', 
+[
+    '/usr/local/Cellar/node/6.6.0/bin/node',
     '/Users/gejiawen/code/20160921/test1.js',
     '--name',
     'gk'
@@ -42,7 +42,7 @@ $ node test1.js --name gk
 
 安装很简单，
 
-```
+```bash
 $ npm install commander
 ```
 
@@ -50,7 +50,7 @@ $ npm install commander
 
 然后我们在新建一个js文件，叫做index.js，内容如下
 
-```javascript
+```js
 var program = require('commander')
 
 program
@@ -59,19 +59,19 @@ program
     .option('-n, --name <name>', 'your name', 'GK')
     .option('-a, --age <age>', 'your age', '22')
     .option('-e, --enjoy [enjoy]')
-    
-program.parse(process.argv)    
+
+program.parse(process.argv)
 ```
 
 此时，一个简单的命令行程序就完成了。我们通过如下的命令来执行它，
 
-```
+```bash
 $ node index.js -h
 ```
 
 结果如下，
 
-```
+```bash
 $ ./test -h
 
   Usage: test [options]
@@ -84,7 +84,7 @@ $ ./test -h
     -V, --version        output the version number
     -n, --name <name>    your name
     -a, --age <age>      your age
-    -e, --enjoy [enjoy]  
+    -e, --enjoy [enjoy]
 ```
 
 commander.js第一个优势就是提供了简介的api对可选项、参数进行解析。第二个优势就是自动生成帮助的文本信息。
@@ -95,7 +95,7 @@ commander.js中命令行有两种可变性，一个叫做`option`，意为选项
 
 看两个例子，
 
-```javascript
+```js
 program
    .version('0.0.1')
    .option('-C, --chdir <path>', 'change the working directory')
@@ -196,7 +196,7 @@ program
 
 eg:
 
-```javascript
+```js
 if (!process.argv.slice(2).length) {
     program.outputHelp(make_red);
 }
@@ -216,7 +216,7 @@ function make_red(txt) {
 
 首先我们得创建一个项目，
 
-```
+```bash
 $ mkdir npmrc-local
 $ git init
 $ npm init
@@ -238,7 +238,7 @@ $ touch lib/index.js
 
 修改`bin/npmrc.js`,
 
-```javascript
+```js
 #!/usr/bin/env node
 
 require('../lib/index')
@@ -246,7 +246,7 @@ require('../lib/index')
 
 修改`lib/index.js`,
 
-```javascript
+```js
 #!/usr/bin/env node
 
 var fs = require('fs')

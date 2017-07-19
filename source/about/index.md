@@ -45,6 +45,7 @@ More links,
 | [gogs.gejiawen.com](http://gogs.gejiawen.com) | 2016.6 | git服务 | 基于gogs的自助式git托管服务 |
 | [book.gejiawen.com](http://book.gejiawen.com) | 2016.4 | 个人书架 | 临时简陋页面，提供书籍列表 |
 | [crack.gejiawen.com](http://crack.gejiawen.com) | 2016.10 | 安全破解 | 😆😆 |
+| [registry.gejiawen.com](http://registry.gejiawen.com) | 2017.7 | npm 私有仓库 | - |
 
 后续将会开通更多的服务子域名，敬请期待。
 
