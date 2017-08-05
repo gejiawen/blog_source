@@ -25,7 +25,7 @@ More links,
  
 - [**My Laboratory**](/labs/)
 - [**Books Reading**](/reading/)
-- [**Career Resume**](/assets/resume/resume.pdf)
+- **Career Resume**
 - [**Rss**](/atom.xml)
 
 
