@@ -39,8 +39,9 @@ date: 2015-12-15 10:41:43
 
 `ngRoute`模块中包含以下内容，
 
-| 名称 | 所属 | 作用 |
-| :--- | :--- | :--- |
+
+| 名称 | 所属 | 使用 |
+| :--- | :--- | :-- |
 | `ngView` | DIRECTIVE | 提供不同路由模板插入的视图层 |
 | `$routeProvider` | PROVIDER | 提供路由配置 |
 | `$route` | SERVICE | 用于构建各个路由的url、view、controller这三者的关系 |
@@ -155,7 +156,7 @@ angular.module('demo002', [
 
 与之前不同的是，我们在声明`demo002`这个module时，附加了额外3个module。在路由的配置中，也仅仅只有一个`$routeProvider.otherwise`的设置。
 
-这里我们就是使用了模块化的思想，将`/home`，`/post`，`/about`这几个路由抽象成独立的module，将他们内部的所有逻辑和设置都封装在内部。比如下面的`home.js`
+这里我们就是使用了模块化的思想，将`/home`，`/post`，`/about`这几个路由抽象成独立的module，将他们内部的所有逻辑和设置都封装在内部。比如下面的`home.js`，
 
 ```javascript
 angular.module('Module.Home', ['ngRoute'])
@@ -363,7 +364,7 @@ angular.module('Module.Post', ['ngRoute'])
 
 当所有的`resolve`配置都返回之后，AngularJS会将`resolve`中key作为对应控制器的一个依赖注入进去，然后我们在相应的controller中就可以使用了。比如，
 
-```javascript
+```js
 .controller('TripController', [
     '$scope',
     'ticket',

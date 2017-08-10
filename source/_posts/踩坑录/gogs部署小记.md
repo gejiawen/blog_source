@@ -21,7 +21,7 @@ date: 2016-05-31 14:22:37
 
 在笔者的本地环境中，可以通过brew来安装golang，
 
-```
+```bash
 $ brew install go
 ```
 
@@ -29,13 +29,13 @@ $ brew install go
 
 安装完毕之后，我们可以通过如下代码来测试一下是否安装成功，
 
-```
+```bash
 $ go version
 ```
 
 其输出类似如下，
 
-```
+```bash
 $ go version go1.6.2 darwin/amd64
 ```
 
@@ -53,7 +53,7 @@ gogs支持的数据库类型非常灵活，基本常见的主流数据库都支�
 
 在一个全新的centos7系统上，如果直接运行
 
-```
+```bash
 yum install mysql
 ```
 
@@ -63,13 +63,13 @@ yum install mysql
 
 首先需要安装mysql的源，
 
-```
+```bash
 $ wget http://repo.mysql.com/mysql-community-release-el7-5.noarch.rpm
 ```
 
 然后安装rpm包，
 
-```
+```bash
 $ sudo rpm -ivh mysql-community-release-el7-5.noarch.rpm
 ```
 
@@ -82,7 +82,7 @@ $ sudo rpm -ivh mysql-community-release-el7-5.noarch.rpm
 
 在安装完mysql之后，我们还需要创建一个数据库，将之取名为gogs，
 
-```
+```sql
 CREATE DATABASE gogs CHARACTER SET utf8 COLLATE utf8_bin;
 GRANT ALL PRIVILEGES ON gogs.* TO ‘root’@‘localhost’;
 FLUSH PRIVILEGES;
@@ -100,7 +100,7 @@ gogs提供多重方式进行安装，比较常用的有两种。一个是二进�
 
 笔者一般采用如下的方式运行gogs，
 
-```
+```bash
 nohup gogs/gogs web > log/gogs_web.log 2>&1 &
 ```
 
@@ -128,7 +128,7 @@ gogs总体来说，配置还是比较简单的。没有过多的配置，就是�
 
 首先，添加nginx的yum源，
 
-```
+```bash
 $ wget  http://nginx.org/packages/centos/7/noarch/RPMS/nginx-release-centos-7-0.el7.ngx.noarch.rpm
 $ rpm -ivh nginx-release-centos-7-0.el7.ngx.noarch.rpm
 ```
@@ -139,7 +139,7 @@ $ rpm -ivh nginx-release-centos-7-0.el7.ngx.noarch.rpm
 
 nginx的反向代理其实是一个虚拟主机，我们需要在`/etc/nginx`目录下新建一个`vhosts`目录，在`vhosts`目录中创建一个`gogs.conf`文件，内容如下
 
-```
+```ini
 server {
     listen 80;
     server_name gogs.gejiawen.com;
@@ -162,7 +162,7 @@ server {
 
 然后在默认的nginx配置文件（`/etc/nginx/nginx.conf`）中，加载虚拟主机的配置。如下，
 
-```
+```ini
 ...
 
 http {
@@ -175,7 +175,7 @@ http {
 
 最后，重新加载nginx的配置即可。
 
-```
+```bash
 $ nginx -s reload
 ```
 
