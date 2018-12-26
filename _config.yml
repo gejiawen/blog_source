@@ -26,7 +26,7 @@ archive_dir: archives
 category_dir: categories
 code_dir: downloads/code
 i18n_dir: :lang
-skip_render: ['slides/**', 'assets/**']
+skip_render: ['slides/**/*', 'assets/**/*']
 
 # Writing
 new_post_name: :title.md # File name of new posts
@@ -39,8 +39,8 @@ post_asset_folder: false
 relative_link: false
 future: true
 highlight:
-  enable: false
-  line_number: false
+  enable: true
+  line_number: true
   tab_replace: true
 
 # Category & Tag
